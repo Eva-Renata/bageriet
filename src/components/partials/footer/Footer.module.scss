@@ -1,0 +1,30 @@
+footer {
+  width: 100%;
+  background-color: rgb(66, 65, 65);
+  text-align: center;
+  height: 25vh;
+  position: relative;
+  padding-top: 2vh;
+  h3 {
+    font-family: "Lobster", cursive;
+    color: white;
+    font-size: 4vh;
+    font-weight: 100;
+  }
+  p {
+    color: white;
+    max-width: 500px;
+    margin: auto;
+    font-size: 1.5vh;
+  }
+  .colorpatch {
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    bottom: 0;
+    p {
+      margin: 2vh auto 2vh auto;
+      font-size: 1.5vh;
+    }
+  }
+}

@@ -1,5 +1,10 @@
+import style from './Forside.module.scss'
+import {Slider}  from '../../partials/slider/Slider'
+
 export const Forside = () => {
     return(
-        <h1>forside</h1>
+     <section>
+       <Slider />
+     </section>
     )
 }
