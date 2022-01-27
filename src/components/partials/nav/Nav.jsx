@@ -8,9 +8,9 @@ export const Nav = props => {
             <ul className={style.navlist}>
                 {props && props.navItems.map((value,index) => {
                     return (
-                        <li key={index}>
+                            <li key={index}>
                             <NavLink to={value.path}>{value.name}</NavLink>
-                        </li>
+                            </li>
                     )
                 })}
             </ul>

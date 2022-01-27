@@ -1,6 +1,6 @@
 import style from './Header.module.scss'
 import { Nav } from '../nav/Nav'
-
+//import { FaSearch } from "react-icons/fa";
 
 // navlinks array
 const navItems = [
@@ -13,9 +13,15 @@ const navItems = [
 
 export const Header = () => {
  return (
-     <>
+     <header>
         <Nav navItems={navItems}/>
-     </>
+        <div className={style.search}>
+            <form>
+                <input type="text" placeholder="Search..." name="search"/>
+                {/* <FaSearch/> */}
+            </form>
+        </div>
+     </header>
 
  )
 }
