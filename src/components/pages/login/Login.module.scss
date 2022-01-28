@@ -1,0 +1,24 @@
+@import "../../helpers//Helpers.module.scss";
+
+.login {
+  @include section;
+  padding-top: 10vh;
+
+  h3 {
+    @include title2;
+  }
+  form {
+    margin: auto;
+    width: 300px;
+    padding: 3vh;
+    input {
+      width: 100%;
+    }
+    .buttons {
+      margin: 2vh;
+      button {
+        width: 100px;
+      }
+    }
+  }
+}
