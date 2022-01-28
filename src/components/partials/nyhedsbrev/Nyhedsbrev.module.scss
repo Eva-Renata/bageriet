@@ -1,0 +1,28 @@
+@import "../../helpers//Helpers.module.scss";
+
+.wrapper {
+  width: 100%;
+  height: auto;
+
+  .nyhedsbrev {
+    @include section;
+    padding: 15vh 5vh 15vh 5vh;
+    color: white;
+    h3 {
+      @include title2;
+      color: white;
+    }
+    form {
+      padding: 5vh;
+      input {
+        width: 80%;
+        padding: 1vh;
+      }
+      button {
+        padding: 1vh 3vh 1vh 3vh;
+        background-color: #6d7c88;
+        color: white;
+      }
+    }
+  }
+}

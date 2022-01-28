@@ -8,14 +8,14 @@
   }
   .figuresection {
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 2vw;
+    grid-template-columns: 33% 33% 33%;
     margin: auto;
     figure {
       margin: 1vw;
       img {
         border-radius: 50%;
-        max-width: 20vw;
+        width: 100%;
+        height: auto;
         margin: 3vh;
       }
       figcaption {

@@ -6,10 +6,10 @@
   color: $greycolor2;
 }
 @mixin section {
-  max-width: 70%;
+  width: 70%;
+  max-width: 800px;
   margin: auto;
   text-align: center;
-  padding: 3vh;
 }
 //colors
 $greycolor1: rgb(66, 65, 65);
