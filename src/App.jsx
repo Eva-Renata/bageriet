@@ -7,9 +7,11 @@ import { Forside } from './components/pages/forside/Forside';
 import { Produkter} from './components/pages/produkter/Produkter';
 import { Kontakt } from './components/pages/kontakt/Kontakt';
 import { Login } from './components/pages/login/Login'
+import { AuthProvider } from './components/Context/AuthProvider';
 
 function App() {
   return (
+    <AuthProvider>
     <div className="pagewrapper">
         <Router>
           <Header />
@@ -24,6 +26,7 @@ function App() {
           <Footer />
         </Router>
     </div>
+    </AuthProvider>
   );
 }
 

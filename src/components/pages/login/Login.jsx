@@ -1,13 +1,14 @@
 import axios from 'axios'
 import style from './Login.module.scss'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { AuthContext } from '../../Context/AuthProvider'
 
 
 export const Login = () => {
     const txtMessage = 'Indtast brugernavn og adgangskode for at logge ind'
     //hook for a message- to change it in function of logged in or out
     const [message, setMessage] = useState(txtMessage);
-    const [loginData, setLoginData] = useState('')
+    const {loginData, setLoginData} = useContext(AuthContext)
 
     
     const SubmitLogin = async e => {
@@ -15,8 +16,9 @@ export const Login = () => {
         try {
             const result = await axios.post('https://api.mediehuset.net/token', formData)
             handleSessionData(result);
+            //function to put the token in sessionstorage
         }
-        //catching error, if it is
+        //catching error, if there is
         catch(err) {
             console.error(err)
             setMessage('Kunne ikke logge ind')
