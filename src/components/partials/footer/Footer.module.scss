@@ -2,15 +2,17 @@
 
 footer {
   width: 100%;
+  position: relative;
   background-color: $greycolor1;
   text-align: center;
-  height: 25vh;
-  position: relative;
+  min-height: 25vh;
   padding-top: 2vh;
   margin-top: 8vh;
+  bottom: 0;
   h3 {
     @include title2;
     color: white;
+    margin-top: -1%;
   }
   p {
     color: lightgrey;

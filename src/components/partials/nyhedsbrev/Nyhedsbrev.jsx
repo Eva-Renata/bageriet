@@ -3,7 +3,7 @@ import background from '../../../assets/Images/newsletterbg.jpg'
 
 export const Nyhedsbrev = () => {
     return (
-        <div className={styles.wrapper} style={{ backgroundImage: `url(${background})`, width:'100%'}}>
+        <div className={styles.wrapper} >
             <section className={styles.nyhedsbrev} >
                 <h3>Tilmeld dig vores nyhedsbrev</h3>
                 <p>Der er mange tilgængelige  udgaver af Lorem Ipsum, men de fleste udgaver har gennemgået forandringer</p>
@@ -18,3 +18,5 @@ export const Nyhedsbrev = () => {
         
     )
 }
+
+// style={{ backgroundImage: `url(${background})`, width:'100%'}}

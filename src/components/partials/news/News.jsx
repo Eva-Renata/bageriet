@@ -6,12 +6,15 @@ import { useState} from "react";
 export const News = () => {
     const [news, setNews] = useState([]);
 
+    //fetching the api
     useEffect(()=>{
         const getData = async () => {
             const url = 'https://api.mediehuset.net/bakeonline/news';
             const result =  await axios.get(url)
-            setNews(result.data.items)
-            console.log(result);
+            //using slice(-3) to show only the last 3 items from the array 
+            //(index starting with 0, so -1 is the last, -2 before the last and so on )
+            setNews(result.data.items.slice(-3))
+            //console.log(result.data.items.slice(-3));
         }
         getData();
     },[setNews])
