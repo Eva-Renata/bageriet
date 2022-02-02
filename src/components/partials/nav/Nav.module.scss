@@ -13,7 +13,7 @@
       &:nth-child(3) {
         a {
           font-family: "Lobster", cursive;
-          font-size: 5vh;
+          font-size: 3vw;
         }
       }
       a {
@@ -21,6 +21,46 @@
         padding: 1em;
         color: white;
         font-size: 2vh;
+      }
+    }
+  }
+}
+
+//BREAKPOINTS
+$x-large: 1300px;
+$large: 1300px;
+$tablet: 980px;
+$mobile: 580px;
+
+@media screen and (min-width: $x-large) {
+  .navbar {
+    background-color: blue;
+  }
+}
+@media screen and (max-width: $large) {
+  .navbar {
+    background-color: red;
+  }
+}
+@media screen and (max-width: $tablet) {
+  .navbar {
+    text-align: unset;
+    ul.navlist {
+      li {
+        a {
+          padding: 0.5em;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $mobile) {
+  .navbar {
+    background-color: green;
+    height: 9vh;
+    ul.navlist {
+      li {
+        display: none;
       }
     }
   }

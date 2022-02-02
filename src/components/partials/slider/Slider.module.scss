@@ -24,3 +24,34 @@
   //   margin-top: 0;
   // }
 }
+//BREAKPOINTS
+$x-large: 1300px;
+$large: 1300px;
+$tablet: 980px;
+$mobile: 580px;
+
+@media screen and (min-width: $x-large) {
+  .navbar {
+    background-color: blue;
+  }
+}
+@media screen and (max-width: $large) {
+  .navbar {
+    background-color: red;
+  }
+}
+@media screen and (max-width: $tablet) {
+  .navbar {
+    background-color: yellow;
+  }
+}
+@media screen and (max-width: $mobile) {
+  .slide {
+    h3 {
+      font-size: 4vh;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
